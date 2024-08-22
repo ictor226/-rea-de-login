@@ -1,0 +1,127 @@
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    background: linear-gradient(45deg, #160013, #3d0b40, #5e2a77);
+    background-size: 200% 200%;
+    animation: gradientAnimation 10s ease infinite;
+}
+
+@keyframes gradientAnimation {
+    0% {
+        background-position: 0% 0%;
+    }
+    50% {
+        background-position: 100% 100%;
+    }
+    100% {
+        background-position: 0% 0%;
+    }
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100dvh;
+}
+
+.card-login {
+    text-align: center;
+    width: 450px;
+    padding: 10px;
+    background-color: rgba(0, 0, 0, 0.4); /* Fundo branco semi-transparente */
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+
+    /* Efeito acrílico na borda 
+    backdrop-filter: blur(10px); Efeito de desfoque do fundo */
+}
+
+.titulo-login {
+    font-size: 2rem;
+    color: #fff;
+    margin: 10px 0;
+}
+
+.inputs-login {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.login-form {
+    width: 350px;
+    background-color: rgba(255,255,255,0.13);
+    border-radius: 10px;
+    backdrop-filter: blur(10px);
+    border: 2px solid rgba(255,255,255,0.1);
+    box-shadow: 0 0 40px rgba(8,7,16,0.6);
+    padding: 50px 30px;
+}
+
+form *{
+    font-family: 'Poppins',sans-serif;
+    color: #ffffff;
+    letter-spacing: 0.5px;
+    outline: none;
+    border: none;
+}
+
+.login-title {
+    font-size: 32px;
+    text-align: center;
+    font-weight: 500;
+}
+
+.login-label {
+    display: block;
+    margin-top: 10px;
+    font-size: 16px;
+    font-weight: 500;
+}
+
+.login-input {
+    display: block;
+    height: 40px;
+    width: 100%;
+    background-color: rgba(255,255,255,0.07);
+    border-radius: 10px;
+    padding: 0 10px;
+    margin-top: 5px;
+    font-size: 14px;
+    font-weight: 300;
+}
+
+.login-input::placeholder{
+    color: #e5e5e5;
+}
+
+.button-container {
+    text-align: center;
+}
+
+.login-button{
+    margin-top: 20px;
+    background-color: transparent;
+    color: #e5e5e5;
+    padding: 5px 15px;
+    font-size: 18px;
+    font-weight: 500;
+    border: 2px solid rgba(255,255,255,0.1);;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: transform 0.5s;
+    transition: transform 0.3s ease, background-color 0.5s ease, border 0.5s ease
+}
+
+.login-button:hover {
+    background-color: #5e2a77;
+    transform: scale(1.1);
+    border: 2px solid rgba(255, 255, 255, 0.514);;
+}
